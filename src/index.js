@@ -1,13 +1,15 @@
+
 document.addEventListener("DOMContentLoaded", () => {
-  let form = document.queryElementById('#create-task-form')
-  let description = document.ElementById('#new-task-description')
-  let todoList = document.getElementById('tasks')
+  // your code here
+  let form = document.getElementById('create-task-form');
+  let task = document.getElementById('new-task-description');
+  let ul = document.getElementById('tasks');
 
-  form.addEventListener("submit", function(event){
-    event.preventDefault()
-    if (description.value){
-        todoList.innerHTML += `<li> ${description.value} </li>`
-        description.value = ''
-      }
-
-})
+  form.addEventListener('submit', function(e) {
+    e.preventDefault()
+    if (task.value) {
+      ul.innerHTML += `<li>${task.value}</li>`
+      task.value = ''
+    }
+  });
+});
