@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const form = document.querySelector('create-task-form')
-  const description = document.querySelector('new-task-description')
+  const form = document.queryElementById('create-task-form')
+  const description = document.ElementById('new-task-description')
   const todoList = document.getElementById('tasks')
 
   form.addEventListener("submit", function(event){
