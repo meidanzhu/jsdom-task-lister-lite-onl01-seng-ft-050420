@@ -8,5 +8,5 @@ document.addEventListener("DOMContentLoaded", () => {
     if (description.value){
         todoList.innerHTML += `<li> ${description.value} </li>`
         description.value = ''
-    }
-});
+      }
+})
